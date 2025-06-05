@@ -5,7 +5,7 @@ import pandas as pd
 
 def fetch_poster(movie_id):
     """Fetches the movie poster URL from TMDB API."""
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=00bdf41b494f0a96516d0232a02bfbfe&language=en-US".format(movie_id)
     try:
         data = requests.get(url)
         data.raise_for_status()  # Raise an exception for bad status codes
